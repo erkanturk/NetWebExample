@@ -1,0 +1,27 @@
+﻿<h2>Index</h2>
+<p>@ViewBag.name</p>
+@{
+    SelectListItem[] liste = new SelectListItem[2]
+    {
+        new SelectListItem() {Text="Değer 1"},
+        new SelectListItem() {Text="Değer 2"}
+    };
+
+}
+<!-- Html Helper ile form oluşturma-->
+@using (Html.BeginForm("Index","Home")){
+    @Html.TextBox("ad");
+    @Html.DropDownList("kisiler",liste)
+    @("Onaylıyorum")@Html.CheckBox("onay")
+    <input type="submit" value="Gönder" />
+}
+
+<form method="Post">
+        <input type="text" name="ad" />
+        <select name="kişiler">
+            <option>Ali</option>
+            <option>Veli</option>
+        </select>
+        Onaylıyorum:<input type="checkbox" name="onay" value="false" />
+        <input type="submit"  value="Gönder" />
+</form>

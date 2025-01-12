@@ -1,0 +1,31 @@
+﻿@ViewData["text"]
+<!--
+    ViewData:Controller tarafından taşınan geçici verilere erişim <a href="#"></a>
+    "text" anahtarı ile belirli bir veriyi görüntüler.<a href="#"></a>
+    Örneğin Controller da ViewData["text"]="Merhaba Dünya"; yazılmışsa burada "Merhaba Dünya" görünür.<a href="#"></a>
+    ViewData, Sadece mevcut HTTP isteği boyunca geçerlidir ve bir sonraki istekte sıfırlanır.
+-->
+
+<div>
+    @Html.DropDownList("dersler")
+    <!--
+    DropDownList:
+    - HTML yardımcılarından biridir ve bir açılır menü (dropdown) oluşturur.
+    - "dersler" adlı bir veri kaynağına bağlanır ve ilgili öğeleri gösterir.
+    - Controller'da `ViewBag.dersler` veya bir model üzerinden "dersler" verisi sağlanmalıdır.
+    - Örnek: Controller'da şu kod olmalıdır:
+        ViewBag.dersler = new SelectList(new List<string> { "Matematik", "Fizik", "Kimya" });
+    -->
+</div>
+
+<div>
+    @TempData["veri"]
+    <!--
+    TempData:
+    - Verileri bir HTTP isteğinden diğerine taşımak için kullanılır.
+    - Genelde bir yönlendirme (Redirect) sonrası verileri saklamak için tercih edilir.
+    - "veri" anahtarıyla geçici olarak saklanan veri burada görüntülenir.
+    - Örneğin, Controller'da `TempData["veri"] = "Bu bir mesajdır";` yazılmışsa burada "Bu bir mesajdır" görünür.
+    - TempData, veriye erişildiğinde otomatik olarak silinir.
+    -->
+</div>
