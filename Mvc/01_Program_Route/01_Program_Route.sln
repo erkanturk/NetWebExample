@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Custom_Helpers", "..\06_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_View_Layout_PartialView", "07_View_Layout_PartialView\07_View_Layout_PartialView.csproj", "{3EE07A94-6D25-4036-AB65-F5331409917A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Render_Section_Nested", "..\08_Render_Section_Nested\08_Render_Section_Nested.csproj", "{438893D1-4790-48F9-A9BA-3DFF40F7F742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_ModelsBinding", "09_ModelsBinding\09_ModelsBinding.csproj", "{4EDC48EC-91B3-41D8-9319-63692697D866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{3EE07A94-6D25-4036-AB65-F5331409917A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE07A94-6D25-4036-AB65-F5331409917A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE07A94-6D25-4036-AB65-F5331409917A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438893D1-4790-48F9-A9BA-3DFF40F7F742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438893D1-4790-48F9-A9BA-3DFF40F7F742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438893D1-4790-48F9-A9BA-3DFF40F7F742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438893D1-4790-48F9-A9BA-3DFF40F7F742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDC48EC-91B3-41D8-9319-63692697D866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDC48EC-91B3-41D8-9319-63692697D866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDC48EC-91B3-41D8-9319-63692697D866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDC48EC-91B3-41D8-9319-63692697D866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
