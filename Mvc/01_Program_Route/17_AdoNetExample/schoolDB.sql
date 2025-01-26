@@ -8,3 +8,11 @@ Age int
 )
 
 Select * from Students
+
+create proc sp_Students
+as
+begin
+set nocount on;
+	select FirstName,LastName,Age from Students
+end
+
