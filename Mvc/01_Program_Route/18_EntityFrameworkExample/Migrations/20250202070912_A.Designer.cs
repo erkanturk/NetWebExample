@@ -11,7 +11,7 @@ using _18_EntityFrameworkExample.Data;
 namespace _18_EntityFrameworkExample.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20250201072140_A")]
+    [Migration("20250202070912_A")]
     partial class A
     {
         /// <inheritdoc />
